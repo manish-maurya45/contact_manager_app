@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    android:gravity="center"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="40sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            app:startIconDrawable="@drawable/person_icon"
+            app:startIconTint="@color/white"
+            app:endIconMode="clear_text"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                app:hintTextAppearance="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_outline"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/mail_outline"
+            app:startIconTint="@color/white"
+            app:endIconMode="clear_text"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mail"
+                app:hintTextAppearance="@color/white"
+                android:background="@drawable/border_outline"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/verified_user"
+            app:startIconTint="@color/white"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                app:hintTextAppearance="@color/white"
+                app:hintTextColor="@color/white"
+                android:background="@drawable/border_outline"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/baseline_lock_24"
+            app:startIconTint="@color/white"
+            app:endIconTint="@color/white"
+            app:passwordToggleEnabled="true"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:hintTextAppearance="@color/white"
+                android:background="@drawable/border_outline"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnSignUp"
+                android:layout_width="365dp"
+                android:layout_height="55dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_gradient_color"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Sign Up"
+                android:layout_marginBottom="20dp"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

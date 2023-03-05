@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_grdnt_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Contact"
+            android:layout_marginStart="-70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="25sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            app:startIconDrawable="@drawable/person_icon"
+            app:startIconTint="@color/white"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact_name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Name"
+                android:textColor="@color/white"
+                app:hintTextAppearance="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_outline"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="@drawable/call_icon"
+            app:startIconTint="@color/white"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                app:hintTextAppearance="@color/white"
+                android:background="@drawable/border_outline"
+                android:textColor="@color/white"
+                android:inputType="phone"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="15dp"
+            android:id="@+id/add_btn"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            android:background="@drawable/add_btn_gradient_bg"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            android:text="Add"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
